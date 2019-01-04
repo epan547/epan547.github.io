@@ -78,23 +78,34 @@ p {
   background: transparent;
   color: #000;
   border: 1px solid black;
-  border-color: transparent;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 14px 32px;
+  margin-top: 26px;
 }
 
 .btn-success {
-  background: transparent;
-  color: #000;
+  color: #fff;
+  background: #000;
   border: 1px solid black;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
   padding: 14px 32px;
   margin-top: 26px;
 }
 
 .btn-success:hover {
-  color: #fff;
-  background: #000;
+  background: transparent;
+  color: #000;
   border: 1px solid black;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 14px 32px;
+  margin-top: 26px;
+}
+
+#homebutton {
+  opacity: 0.7;
 }
 
 a {
@@ -143,9 +154,13 @@ a:hover, a:active, a:focus {
 
 #about,
 #gallery {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
+  align-content: center;
+  align-items: center;
 }
 
 #contact h1 {
@@ -160,12 +175,13 @@ a:hover, a:active, a:focus {
 }
 
 .overlay {
+  /* Make responsive- this is the big background picture */
   background-color: white;
-  background-image: url("swirly.jpg");
+  background-image: url("swirly_newer.jpg");
   /* old url: 'http://www.vrtec-nazaret.si/sites/default/files/pictures/novice/barve_1.png' */
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 1;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -173,9 +189,12 @@ a:hover, a:active, a:focus {
   top: 0;
   left: 0;
   right: 0;
+  vertical-align: bottom
 }
 
+#overlay_container {
 
+}
 
 /*---------------------------------------
     Pre Loader Style
@@ -227,6 +246,13 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
     Main Navigation
 -----------------------------------------*/
+.nav-container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  display: flex;
+}
 
 .navbar-default {
   background: #ffffff;
@@ -234,6 +260,10 @@ a:hover, a:active, a:focus {
   border: none;
   margin-bottom: 0px !important;
   display: inline-block;
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
@@ -245,12 +275,16 @@ a:hover, a:active, a:focus {
   margin: 0;
 }
 
-.navbar-default .navbar-nav {
-  align-content: center;
+.navbar-nav {
+  /* align-content: center;
   text-align: center;
-  align-items: center;
-  margin-left: auto;
-  padding-left: 20em;
+  align-items: center; */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-left: 40px;
+  left: 50%;
+  /* padding-left: 20em; */
 }
 
 .navbar-default .navbar-nav li a {
@@ -275,8 +309,8 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-nav li a span:before {
   content: "";
-  /* position: absolute; */
-  width: 100%;
+  position: absolute;
+  align-self:center;
   height: 2px;
   bottom: 0;
   /* left: 0; */
@@ -400,13 +434,15 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #propic {
-  position: relative;
+  position: static;
   border-radius: 4px;
-  height: 33em;
+  height: 35em;
+  margin-right: 15px;
 }
 
 #about {
   background: #f0f0f0;
+  margin: 0;
 }
 
 #about .item {
@@ -417,7 +453,9 @@ a:hover, a:active, a:focus {
 #about .about-thumb {
   background: #ffffff;
   border-radius: 4px;
-  padding: 80px;
+  padding: 60px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   position: relative;
 }
 
