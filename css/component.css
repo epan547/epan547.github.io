@@ -9,6 +9,7 @@
 	display: inline-block;
 	margin: 0;
 	padding: 20px;
+	min-height: 320px;
 	text-align: left;
 	position: relative;
 }
@@ -16,12 +17,14 @@
 .grid figure {
 	background-color: #0b3c5d;
 	margin: 0;
+	min-height: 320px;
 	position: relative;
 }
 
 .grid figure img {
 	width: 100%;
 	max-width: 100%;
+	min-height: 320px;
 	display: block;
 	position: relative;
 }
