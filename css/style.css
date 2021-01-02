@@ -140,7 +140,10 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .section-title {
-  padding-bottom: 62px;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  text-align: center;
+  width: 100%;
 }
 
 #about .section-title {
@@ -432,12 +435,23 @@ a:hover, a:active, a:focus {
     About Section
 -----------------------------------------*/
 
-#propic {
-  position: static;
-  border-radius: 4px;
-  height: 35em;
-  margin-right: 15px;
+.propic {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: 4em 0em 0em 2em;
 }
+
+.propic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
 
 #about {
   background: #f0f0f0;
@@ -458,79 +472,100 @@ a:hover, a:active, a:focus {
   position: relative;
 }
 
-#about .about-img img {
-  border: 8px solid #ffffff;
-  position: absolute;
-  left: -120px;
-  bottom: -325px;
-  padding: 12px;
+/*---------------------------------------
+    Timeline section
+-----------------------------------------*/
+
+.timeline-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.timeline-box * {
+  box-sizing: border-box;
 }
 
-#about .team-thumb {
+.timeline {
   width: 100%;
-  height: 400px;
-  margin: 32px 0;
-  text-align: center;
-  background: #ffffff;
-  border-radius: 4px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#about .team-thumb .image-holder {
+  max-width: 800px;
   position: relative;
-  top: 40px;
-  display: inline-block;
-  margin-bottom: 40px;
-  padding: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#about .team-thumb .heading {
-  font-weight: bold;
+.entry {
+  clear: both;
+  text-align: left;
   position: relative;
-  top: 10px;
-  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-#about .team-thumb:hover {
-  background: #304352;
+.entry .title {
+  margin-bottom: .5em;
+  margin-top: .5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
 }
-
-#about .team-thumb:hover .image-holder {
-  top: -40px;
-  margin-bottom: 0px;
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #e44c65;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -27px;
+  z-index: 99;
 }
-
-#about .team-thumb:hover .heading {
-  top: -10px;
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
 }
-
-#about .team-thumb .description {
-  font-size: 18px;
-  width: 80%;
-  margin: 0 auto;
-  opacity: 0;
-  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
 }
-
-#about .team-thumb:hover .description {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
 }
-
-#about .team-thumb:hover p.description {
-  color: #ffffff;
+.entry .body p {
+  line-height: 1.4em;
 }
-
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
+}
 
 
 /*---------------------------------------
@@ -618,7 +653,9 @@ footer {
   padding-top: 30px;
 }
 
-
+.smalltext{
+  font-size: 14px;
+}
 
 /*---------------------------------------
     Social icons style
@@ -687,39 +724,26 @@ footer {
    Responsive Mobile
 -----------------------------------------*/
 
-@media (max-width: 980px) {
-/*
-  #home, .overlay {
-    height: 50vh;
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
   }
-*/
-  #about .team-thumb {
-    margin-top: 32px;
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
   }
-
 }
-
-
-@media (max-width: 767px) {
-
-  #home, .overlay {
-    height: 100vh;
-  }
-
-  #about .about-thumb {
-    padding: 32px;
-    margin-bottom: 32px;
-    text-align: center;
-  }
-
-  #about .col-md-3 img {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-
-}
-
 
 
 @media (max-width: 650px) {

@@ -10,9 +10,8 @@ $(document).ready(function() {
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
+    $(".navbar-collapse").collapse('hide');
+    
 
 
   /* Smoothscroll js
