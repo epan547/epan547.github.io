@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #e44c65;
+  color: salmon;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 4px;
@@ -109,14 +109,16 @@ p {
 }
 
 a {
-  color: #e44c65;
+  /*color: #e44c65;*/
+  color: salmon;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #e44c65;
+  /*color: #e44c65;*/
+  color: salmon;
   outline: none;
 }
 
@@ -220,7 +222,7 @@ a:hover, a:active, a:focus {
 .sk-spinner-pulse {
   width: 60px;
   height: 60px;
-  background-color: #e44c65;
+  background-color: salmon;
   border-radius: 100%;
   margin: 40px auto;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
@@ -529,7 +531,7 @@ a:hover, a:active, a:focus {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 5px solid #e44c65;
+  border: 5px solid salmon;
   background-color: #fff;
   border-radius: 100%;
   top: 15%;
@@ -552,6 +554,7 @@ a:hover, a:active, a:focus {
 }
 .entry .body p {
   line-height: 1.4em;
+  font-size: 20px;
 }
 .entry .body p:first-child {
   margin-top: 0;
@@ -621,7 +624,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact .form-control:focus {
-  border-color: #e44c65;
+  border-color: salmon;
   color: #ffffff;
 }
 
@@ -630,7 +633,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"] {
-  background: #e44c65;
+  background: salmon;
   border:none;
   color: #ffffff;
   font-weight: 400;
@@ -653,8 +656,12 @@ footer {
   padding-top: 30px;
 }
 
-.smalltext{
+.smalltext {
   font-size: 14px;
+}
+
+.boldtext {
+  font-weight: 400;
 }
 
 /*---------------------------------------
@@ -686,7 +693,7 @@ footer {
 
 .social-icon li a:hover {
   background: #ffffff;
-  color: #e44c65;
+  color: salmon;
 }
 
 
@@ -714,7 +721,7 @@ footer {
 }
 
 .go-top:hover {
-  background: #e44c65;
+  background: salmon;
   color: #ffffff;
 }
 
