@@ -1,3 +1,19 @@
+// Show more text when clicking on "Read more" in Career section
+
+const buttons = document.getElementsByClassName('readMore');
+
+const onButtonClick = (event) => {
+  const button = event.target;
+  const dataTarget = button.getAttribute('data-target');
+  const extraContent = document.getElementById(dataTarget);
+  button.innerHTML = button.innerHTML === 'Read less' ? 'Read more' : 'Read less';
+  extraContent.classList.toggle('show');
+}
+
+const attachingEvent = e => e.addEventListener('click', onButtonClick);
+
+Array.prototype.forEach.call(buttons, attachingEvent);
+
 
  /* jQuery Pre loader
   -----------------------------------------------*/

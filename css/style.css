@@ -480,21 +480,20 @@ a:hover, a:active, a:focus {
 
 .timeline-box {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   width: 100vw;
-  margin: 0;
-  padding: 1em;
+  margin: 0em;
+  padding: 0em;
   box-sizing: border-box;
 }
 .timeline-box * {
   box-sizing: border-box;
 }
-
 .timeline {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   position: relative;
 }
 .timeline:before {
@@ -519,7 +518,7 @@ a:hover, a:active, a:focus {
 }
 .entry .title {
   margin-bottom: .5em;
-  margin-top: .5em;
+  margin-top: 2em;
   float: left;
   width: 33%;
   padding-right: 30px;
@@ -543,11 +542,12 @@ a:hover, a:active, a:focus {
   font-size: 120%;
 }
 .entry .title p {
-  margin: 0;
+  margin: .5em 0 0 0;
   font-size: 100%;
+  line-height: 1.5em;
 }
 .entry .body {
-  margin: 0 0 3em;
+  margin: 1.5em 0 1.5em 0;
   float: right;
   width: 66%;
   padding-left: 30px;
@@ -564,12 +564,23 @@ a:hover, a:active, a:focus {
   color: #aaa;
   padding-left: 0;
   list-style-type: none;
+  font-size: 16px;
 }
 .entry .body ul li:before {
   content: "–";
   margin-right: .5em;
 }
-
+.readMore:hover {
+  color: #000;
+}
+.extraContent{
+  display: none;
+  font-weight: 300;
+  font-size: 18px !important;
+}
+.show {
+  display: inline !important;
+}
 
 /*---------------------------------------
     Galllery section
@@ -657,11 +668,12 @@ footer {
 }
 
 .smalltext {
-  font-size: 14px;
+  font-size: 1em;
 }
 
-.boldtext {
-  font-weight: 400;
+.footerbold {
+  /*font-weight: 400;*/
+  font-size: 1.5em;
 }
 
 /*---------------------------------------
