@@ -1,346 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+	<head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
 
-	<title>Emma Pan's Portfolio</title>
-	<!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
+		<title>Emma Pan's Portfolio</title>
+		<!-- Snapshot Template http://www.templatemo.com/tm-493-snapshot Zoom Slider https://vegas.jaysalvat.com/ Caption Hover Effects http://tympanus.net/codrops/2013/06/18/caption-hover-effects/ -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/component.css">
+		<link rel="stylesheet" href="css/zoomIn.css">
 
-Zoom Slider
-https://vegas.jaysalvat.com/
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- <link rel="stylesheet" href="css/vegas.min.css"> -->
+		<link rel="stylesheet" href="css/style.css">
 
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/component.css">
-	<link rel="stylesheet" href="css/zoomIn.css">
+		<!-- Google web font -->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<!-- <link rel="stylesheet" href="css/vegas.min.css"> -->
-	<link rel="stylesheet" href="css/style.css">
+	</head>
 
-	<!-- Google web font  -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-</head>
+		<!-- Preloader section -->
 
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
-	<!-- Preloader section -->
-
-	<div class="preloader">
-		<div class="sk-spinner sk-spinner-pulse"></div>
-	</div>
-
-
-	<!-- Navigation section  -->
-
-	<div class="navbar navbar-collapse navbar-default navbar-fixed-top" role="navigation">
-		<div class="nav-container">
-			<!-- <div class="collapse navbar-collapse"> -->
-			<div class="offcanvas-header mt-3"> 
-			<ul class="nav navbar-nav">
-				<li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-				<li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-				<li><a href="#timeline" class="smoothScroll"><span>Career</span></a></li>
-				<li><a href="#gallery" class="smoothScroll"><span>Projects</span></a></li>
-				<li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
-			</ul>
-			</div>
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-pulse"></div>
 		</div>
-	</div>
 
+		<!-- Navigation section -->
 
-	<!-- Home section -->
-
-	<section id="home">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-					<h1 class="wow fadeInUp" data-wow-delay="0.6s">Emma Pan</h1>
-					<p class="wow fadeInUp" data-wow-delay="0.9s">Engineer, designer, and artist passionate about infusing care and  inclusivity into today's socio-technical systems.</p><br>
-					<div id="homebutton">
-						<a href="#about" class="btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.5s"><span>Learn more</span></a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-	<!-- About section -->
-	<!-- create about page also, with a button for resume download and caption: tl;dr: download my resume -->
-	<section id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 wow fadeInUp" data-wow-delay="0.5s">
-					<div class="about-thumb">
-						<h1>About</h1>
-						<p>Hello! I'm a student at Olin College of Engineering '21, studying computer science and human-centered design. At Olin, I am learning how to learn better, and discovering new ways to affect the world around me. My past experiences involve project management, systems engineering, web development, biomedical research, and design for + with stakeholders. <!-- I have co-founded a rapidly growing public interest technology clinic at Olin College, and interned with Microsoft Autonomous Edge, Boston Scientific Neuromodulation, GE Renewable Energy, and Dana Farber Cancer Institute. --></p>
-					</div>
-				</div>
-
-				<div class="propic col-md-4 wow fadeInUp" data-wow-delay="1s">
-					<img src="images/tts_portrait.jpeg">
-				</div>
-	</section>
-
-
-	<!-- Career Timeline section -->
-	<section id="timeline">
-		<div class="section-title">
-			<h1>Career</h1>
-		</div>
-		<div class="timeline-box wow fadeInUp" data-wow-delay="0.5s">
-			<div class="timeline">
-			  <div id="first" class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>May - August, 2020</h3>
-			      <p>Software Development Engineer Intern</p>
-			    </div>
-			    <div class="body">
-					<p>Last summer, I worked remotely for Microsoft's Autonomous Edge Team, developing a framework for distributed systems. <a class="readMore" data-target="microsoft" onclick="showMoreText()">Read more</a></p> 
-					<p class="extraContent" id="microsoft">I primarily worked on developing a command-line interface and React Web UI for visualizing distributed system data and interacting with product APIs. After finishing my main project, I experimented with solutions for dynamically serializing and deserializing Protobuf messages at runtime in Python and Javascript. Throughout the internship, I collaborated across different time zones, and organized shared resources and events among interns and new hires to promote sense of community.</p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>January - December, 2020</h3>
-			      <p>IDEO CoLab 2020 Fellow</p>
-			    </div>
-			    <div class="body">
-					<p>As part of IDEO CoLab's 2020 fellow cohort, I participated in design thinking workshops, presentations, and networking events.</p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>February, 2020</h3>
-			      <p>MakeHarvard Makeathon</p>
-			    </div>
-			    <div class="body">
-					<p>My team built a <a href="https://devpost.com/software/the-melodicon">Meloditron</a> that won 1st Place at <a href="https://www.makeharvard.io">MakeHarvard</a>! (a hackathon with hardware and electronics)</p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>September, 2019 - Present</h3>
-			      <p>Cofounder of Olin PInT</p>
-			    </div>
-			    <div class="body">
-					<p>With a grant from the <a href="https://www.newamerica.org/pit/university-network/about-pitun/">PIT-UN</a>, I co-founded a student-run public interest technology project team at Olin, called <a href="http://pint.olin.edu">PInT</a>. <a class="readMore" data-target="pit" onclick="showMoreText()">Read more</a></p> 
-					<p class="extraContent" id="pit">I co-founded PInT because I am passionate about using my skills to serve my communities, by creating experiential learning opportunities for myself and others to practice asking questions about how technology can both serve and harm the public interest. For the first year of PInT, I managed a student-run consulting clinic, which did pro-bono technical projects with non-profit partners. During this year, I also helped establish a peer:peer teaching skillshare program, design and launch a summer fellowship for 3 students, and hire + onboard a project coordinator employee. PInT's second year involved adapting our programs to meet student needs during the COVID-19 pandemic. Our team has grown from 5 to 60+ students in the past 1.5 years, and we have presented at foundational public interest technology events and conferences. </p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>May - August, 2019</h3>
-			      <p>Systems R&D Intern</p>
-			    </div>
-			    <div class="body">
-					<p>At Boston Scientific Neuromodulation, I developed an Android app and did systems work in Java, C++, and Matlab. <a class="readMore" data-target="bosci" onclick="showMoreText()">Read more</a></p> 
-					<p class="extraContent" id="bosci">As a systems R&D engineer, I worked closely with the algorithm code that computes electric potential fields for Boston Scientific's Spinal Cord Stimulator devices. Throughout the summer, I collaborated with another intern to develop an Android app proof of concept that mimicked the functionality of a medical device, then presented this project to various department directors and project stakeholders. During this internship, I also came up with a patent idea with my mentor, added production code to a library, and created a process for porting code from Matlab to Java, using C++ and JNI.</p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>June - August, 2018</h3>
-			      <p>Digital Technology Intern</p>
-			    </div>
-			    <div class="body">
-					<p>At GE Renewable Energy, I created REST APIs and guided a technical team's transition towards Scrum. <a class="readMore" data-target="ge" onclick="showMoreText()">Read more</a></p> 
-					<p class="extraContent" id="ge">During this internship, I taught myself Java, in order to create a REST APIs to automate a previously manual data transfer process. These APIs ended up saving 3 working hrs/day, 800 hrs /year. I also led a technical team’s transition to working in Scrum, acting as scrum-master, and using agile tools like Rally and Aha! to track progress. Lastly, I designed a front-end proof of concept for a meta data mapping web app using GE’s Predix/Polymer components for the UI.</p>
-			    </div>
-			  </div>
-			  <div class="entry wow fadeInUp" data-wow-delay="0.5s">
-			    <div class="title">
-			      <h3>June - August, 2015+2016</h3>
-			      <p>Cancer Biology Research Intern</p>
-			    </div>
-			    <div class="body">
-					<p>At Dana Farber Cancer Institute's <a href="https://zhaolab.dana-farber.org/">Zhao lab</a>, I conducted wet-lab experiments, studying the PI3K cell signaling pathway. <a class="readMore" data-target="danafarber" onclick="showMoreText()">Read more</a></p> 
-					<p class="extraContent" id="danafarber">I spent two summers (2015 and 2016) at Dana Farber, researching the effects of the PI3K cell signaling pathway on cancer biology. I helped my mentors with literature review, developed hypotheses, and learned how to conduct my own wet-lab experiments involving western blots, cell imaging, qPCR, and RNA sequencing.</p>
-			    </div>
-			  </div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- Gallery section -->
-
-	<section id="gallery">
-		<div class="row">
-			<ul class="grid cs-style-4">
-
-				<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-					<div class="section-title">
-						<h1>Projects</h1>
-					</div>
-				</div>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-					<figure>
-						<div><img src="images/pit.jpeg" alt="Public interest technology picture with lady justice statue"></div>
-						<figcaption>
-							<h1>IEEE ISTAS Conference</h1>
-							<br>
-							<small>I co-wrote a collaborative autoethnography paper, "Care and Liberation in Creating a Student-Led Public Interest Technology Clinic", with the four other founders of PInT. We presented our research at the <a id="link" href="https://attend.ieee.org/istas-2020/"> 2020 IEEE ISTAS conference</a>, and we are submitting it to be published in an IEEE magazine. </small>
-							<a href="https://drive.google.com/file/d/1iafsRXjC9Vv6gmzRZoT3hPgIrpjh7xoG/view?usp=sharing">Read paper</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-					<figure>
-						<div><img src="images/pneumask.jpeg" alt="Picture of the Pneumask, a full-face reusable mask that is adapted from a snorkel, for covid-19 protection."></div>
-						<figcaption>
-							<h1>Pneumask App</h1>
-							<small>I worked with <a id="link" href="https://www.pneumask.org/">Stanford's Prakash Lab</a> to develop and launch an Android app called <a id="link" href="https://play.google.com/store/apps/details?id=org.pneumask.app&hl=en_US&gl=US">Pneumask App</a>, which helps doctors communicate while wearing sound-inhibiting personal protective equipment. The app uses the phone's built-in speakers to amplify a doctor's voice from a Bluetooth microphone inside the mask. Within the app, we also provide safety protocol resources for donning/doffing the masks, created by the Prakash lab. </small>
-							<a href="https://play.google.com/store/apps/details?id=org.pneumask.app&hl=en_US&gl=US" target="_blank">App listing</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-					<figure>
-						<div><img src="images/poe.JPG" alt="image of 3d printed battle bots"></div>
-						<figcaption>
-							<h1>Voice-Controlled Laser Battle Bots!</h1>
-							<small>For an 8-week class project, my team of 5 coded an Android app for speech recognition, and built two robots with drive trains, microcontrollers, Bluetooth, lasers, speakers, and sensors. Click the button to learn about our process!</small>
-							<a href="http://poe.olin.edu/2018/lab_1015/" target="_blank">Website</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-					<figure>
-						<div><img src="images/info.jpg" alt="Screenshot of info.olin.build website homepage"></div>
-						<figcaption>
-							<h1>info.olin.build</h1>
-							<small>A 4-week project for the class Products and Markets. After much user research, beta testing, and iteration, my team created an accessible and aesthetic web page that localizes useful Olin information. People in the community are still actively using it today! See the project <a id="link" href="https://info.olin.build">here</a>.</small>
-							<a href="https://docs.google.com/presentation/d/1C_saFdehgA5xsp2i_hNDtDDzFpYBvz23SclJXKCwx68/edit?usp=sharing" target="_blank">Our Presentation</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-					<figure>
-						<div><img src="images/rocky.jpg" alt="image of a pendulum pi-control robot"></div>
-						<figcaption>
-							<h1>Quantitative Engineering Analysis</h1>
-							<!-- <small>Click the button below to learn about some applied math and physics projects! <br><br> Warning: there will be Matlab.</small> -->
-							<small>Click the button below to learn about an applied math and physics project from this double-wide experiential learning class!
-							<a href="https://minhkhang1795.wixsite.com/art-visualizer" target="_blank">Art Visualizer</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-					<figure>
-						<div class="gal_img"><img src="images/pickupbot.jpg" alt="Screenshot of the landing page of the pickup line bot webapp."></div>
-						<figcaption>
-							<h1>Pick-up Line Bot</h1>
-							<small>A friendly bot on Tinder and the web that provides relevant pick-up lines to people, and learns from their feedback. This team project involved web-scraping, elementary machine learning, chat bot creation, and web development. The app is hosted on Heroku, so takes a bit to load.</small>
-							<a href="https://pickuplinebot.herokuapp.com/" target="_blank">Check it out!</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
-					<figure>
-						<div><img src="images/checkplease.jpg" alt="the smiling cast of check please play"></div>
-						<figcaption>
-							<h1>Check, Please</h1>
-							<small>Spring semester of my first year, I co-directed a play! This production was entirely student-led.</small>
-							<!-- <a href="#" target="_blank">Learn More</a> -->
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
-					<figure>
-						<div><img src="images/starwarstheater.jpg" alt="crowded theater of students about to watch star wars"></div>
-						<figcaption>
-							<h1>A New Olin Tradition</h1>
-							<small>During my first semester at Olin, I organized a community bonding event for the whole school: students, faculty, and staff carpooled to a theater together and watched Star Wars: the Last Jedi on the day of the premier! Thanks to school
-								funding, the movie and the pizza party afterwards were free.</small>
-							<!-- <a href="#" target="_blank">Learn More</a> -->
-							<!-- Could write an article or leave as is -->
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
-					<figure>
-						<div><img src="images/fish.jpg" alt="goldfish with black background surrounded by a school of digital fish"></div>
-						<figcaption>
-							<h1>Art, Design, and Animation</h1>
-							<small>I've been making art for most of my life, so I like to apply that creativity, aesthetic, and attention to detail to my engineering as well.</small>
-							<a href="https://www.instagram.com/emmas_art_/" target="_blank">Check it out!</a>
-						</figcaption>
-					</figure>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- Footer section -->
-
-	<footer>
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-12 col-sm-12">
-					<div id="contact">
-						<h1 class="wow fadeInDown" data-wow-delay="0.2s">Contact Me</h1>
-					</div>
-					<ul class="social-icon">
-						<li><a href="https://www.linkedin.com/in/emma-pan-85810a15b" class="fa fa-linkedin wow fadeInDown" data-wow-delay="0.2s"></a></li>
-						<li><a href="https://github.com/epan547/epan547.github.io" class="fa fa-github wow fadeInDown" data-wow-delay="0.4s"></a></li>
-						<li><a href="https://www.facebook.com/emma.pan.585" class="fa fa-facebook wow fadeInDown" data-wow-delay="0.6s"></a></li>
-						<li><a href="mailto:epan549@gmail.com" class="fa fa-envelope wow fadeInDown" data-wow-delay="0.8s"></a></li>
+		<div class="navbar navbar-collapse navbar-default navbar-fixed-top" role="navigation">
+			<div class="nav-container">
+				<!-- <div class="collapse navbar-collapse"> -->
+				<div class="offcanvas-header mt-3">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#top" class="smoothScroll">
+								<span>Home</span></a>
+						</li>
+						<li>
+							<a href="#about" class="smoothScroll">
+								<span>About</span></a>
+						</li>
+						<li>
+							<a href="#timeline" class="smoothScroll">
+								<span>Career</span></a>
+						</li>
+						<li>
+							<a href="#gallery" class="smoothScroll">
+								<span>Projects</span></a>
+						</li>
+						<li>
+							<a href="#contact" class="smoothScroll">
+								<span>Contact</span></a>
+						</li>
 					</ul>
+				</div>
+			</div>
+		</div>
 
-					<p class="footerbold wow fadeInDown" data-wow-delay="1s">Made with ♡️ by Emma Pan | Gallery Design: <a href="https://templatemo.com" title="free css templates" target="_blank">Templatemo</a> | Animations: <a href="https://animate.style">Animate.css</a> | Timeline Design: <a href="https://freefrontend.com/css-timelines/">Kelsey Santangelo</a></a></p>
-					<p class="smalltext wow fadeInDown" data-wow-delay="1s"></p>
+		<!-- Home section -->
+
+		<section id="home">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+						<h1 class="wow fadeInUp" data-wow-delay="0.6s">Emma Pan</h1>
+						<p class="wow fadeInUp" data-wow-delay="0.9s">Engineer, designer, and artist passionate about infusing care and inclusivity into today's socio-technical systems.</p><br>
+						<div id="homebutton">
+							<a href="#about" class="btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.5s">
+								<span>Learn more</span></a>
+						</div>
+					</div>
 
 				</div>
-
 			</div>
+		</section>
 
-		</div>
-	</footer>
+		<!-- About section -->
+		<!-- create about page also, with a button for resume download and caption: tl;dr: download my resume -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 wow fadeInUp" data-wow-delay="0.5s">
+						<div class="about-thumb">
+							<h1>About</h1>
+							<p>Hello! I'm a student at Olin College of Engineering '21, studying computer science and human-centered design. At Olin, I am learning how to learn better, and discovering new ways to affect the world around me. My past experiences involve project
+								management, systems engineering, web development, biomedical research, and design for + with stakeholders.
+								<!-- I have co-founded a rapidly growing public interest technology clinic at Olin College, and interned with Microsoft Autonomous Edge, Boston Scientific Neuromodulation, GE Renewable Energy, and Dana Farber Cancer Institute. -->
+							</p>
+						</div>
+					</div>
 
-	<!-- Back top -->
-	<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+					<div class="propic col-md-4 wow fadeInUp" data-wow-delay="1s">
+						<img src="images/tts_portrait.jpeg">
+					</div>
+				</section>
 
-	<!-- Javascript  -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/vegas.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/toucheffects.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/custom.js"></script>
+				<!-- Career Timeline section -->
+				<section id="timeline">
+					<div class="section-title">
+						<h1>Career</h1>
+					</div>
+					<div class="timeline-box wow fadeInUp" data-wow-delay="0.5s">
+						<div class="timeline">
+							<div id="first" class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>September, 2020 - PRESENT</h3>
+									<p>Project Manager</p>
+								</div>
+								<div class="body">
+									<p>
+										I led a team of 4 in my
+										<a href="https://epan547.github.io/Microsoft-SCOPE-2021/">senior capstone project</a>, sponsored by a Microsoft
+										<a href="https://www.microsoft.com/en-us/ai/ai-for-accessibility-grants">Accessibility for AI</a>
+										grant.
+										<a class="readMore" data-target="scope" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="scope">Our goal was to design functional specifications for impactful web accessibility issues that can be addressed by machine learning solutions. On top of the human-centered design work that our whole team was doing, my
+										role was to plan our time within sprints, create agendas, manage tasks in Trello, and lead the team through 10hrs of meetings / week. We are handing off three specifications to UT Austin's research group, which will create a dataset and send out a
+										challenge that calls on corporations and research groups to implement the solutions. Check out our results
+										<a href="https://epan547.github.io/Microsoft-SCOPE-2021/">here</a>.</p>
+								</div>
+							</div>
+							<div id="first" class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>May - August, 2020</h3>
+									<p>Software Development Engineer Intern</p>
+								</div>
+								<div class="body">
+									<p>Last summer, I worked remotely for Microsoft's Autonomous Edge Team, developing a framework for distributed systems.
+										<a class="readMore" data-target="microsoft" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="microsoft">I primarily worked on developing a command-line interface and React Web UI for visualizing distributed system data and interacting with product APIs. After finishing my main project, I experimented with
+										solutions for dynamically serializing and deserializing Protobuf messages at runtime in Python and Javascript. Throughout the internship, I collaborated across different time zones, and organized shared resources and events among interns and new
+										hires to promote sense of community.</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>January - December, 2020</h3>
+									<p>IDEO CoLab 2020 Fellow</p>
+								</div>
+								<div class="body">
+									<p>As part of
+										<a href="https://www.ideocolab.com/">IDEO CoLab</a>'s 2020 fellow cohort, I participated in design thinking workshops, presentations, and networking events.</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>February, 2020</h3>
+									<p>MakeHarvard Winner</p>
+								</div>
+								<div class="body">
+									<p>My team built a
+										<a href="https://devpost.com/software/the-melodicon">Meloditron</a>
+										that won 1st Place at
+										<a href="https://www.makeharvard.io">MakeHarvard</a>! (A hackathon with hardware and electronics)</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>September, 2019 - Present</h3>
+									<p>Cofounder of Olin PInT</p>
+								</div>
+								<div class="body">
+									<p>With a grant from the
+										<a href="https://www.newamerica.org/pit/university-network/about-pitun/">PIT-UN</a>, I co-founded a student-run public interest technology project team at Olin, called
+										<a href="http://pint.olin.edu">PInT</a>.
+										<a class="readMore" data-target="pit" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="pit">I co-founded PInT because I am passionate about using my skills to serve my communities, by creating experiential learning opportunities for myself and others to practice asking questions about how technology can both
+										serve and harm the public interest. For the first year of PInT, I managed a student-run consulting clinic, which did pro-bono technical projects with non-profit partners. During this year, I also helped establish a peer:peer teaching skillshare
+										program, design and launch a summer fellowship for 3 students, and hire + onboard a project coordinator employee. PInT's second year involved adapting our programs to meet student needs during the COVID-19 pandemic. Our team has grown from 5 to 60+
+										students in the past 1.5 years, and we have presented at foundational public interest technology events and conferences.
+									</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>May - August, 2019</h3>
+									<p>Systems R&D Intern</p>
+								</div>
+								<div class="body">
+									<p>At Boston Scientific Neuromodulation, I developed an Android app and did systems work in Java, C++, and Matlab.
+										<a class="readMore" data-target="bosci" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="bosci">As a systems R&D engineer, I worked closely with the algorithm code that computes electric potential fields for Boston Scientific's Spinal Cord Stimulator devices. Throughout the summer, I collaborated with another
+										intern to develop an Android app proof of concept that mimicked the functionality of a medical device, then presented this project to various department directors and project stakeholders. During this internship, I also came up with a patent idea
+										with my mentor, added production code to a library, and created a process for porting code from Matlab to Java, using C++ and JNI.</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>June - August, 2018</h3>
+									<p>Digital Technology Intern</p>
+								</div>
+								<div class="body">
+									<p>At GE Renewable Energy, I created REST APIs and guided a technical team's transition towards Scrum.
+										<a class="readMore" data-target="ge" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="ge">During this internship, I taught myself Java, in order to create a REST APIs to automate a previously manual data transfer process. These APIs ended up saving 3 working hrs/day, 800 hrs /year. I also led a technical
+										team’s transition to working in Scrum, acting as scrum-master, and using agile tools like Rally and Aha! to track progress. Lastly, I designed a front-end proof of concept for a meta data mapping web app using GE’s Predix/Polymer components for the
+										UI.</p>
+								</div>
+							</div>
+							<div class="entry wow fadeInUp" data-wow-delay="0.5s">
+								<div class="title">
+									<h3>June - August, 2015+2016</h3>
+									<p>Cancer Biology Research Intern</p>
+								</div>
+								<div class="body">
+									<p>At Dana Farber Cancer Institute's
+										<a href="https://zhaolab.dana-farber.org/">Zhao lab</a>, I conducted wet-lab experiments, studying the PI3K cell signaling pathway.
+										<a class="readMore" data-target="danafarber" onclick="showMoreText()">Read more</a>
+									</p>
+									<p class="extraContent" id="danafarber">I spent two summers (2015 and 2016) at Dana Farber, researching the effects of the PI3K cell signaling pathway on cancer biology. I helped my mentors with literature review, developed hypotheses, and learned
+										how to conduct my own wet-lab experiments involving western blots, cell imaging, qPCR, and RNA sequencing.</p>
+								</div>
+							</div>
 
-</body>
+						</div>
+					</div>
+				</section>
 
-</html>
+				<!-- Gallery section -->
+
+				<section id="gallery">
+					<div class="row">
+						<ul class="grid cs-style-4">
+
+							<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+								<div class="section-title">
+									<h1>Projects</h1>
+								</div>
+							</div>
+
+							<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+								<figure>
+									<div><img src="images/pit.jpeg" alt="Public interest technology picture with lady justice statue"></div>
+									<figcaption>
+										<h1>IEEE ISTAS Conference</h1>
+										<br>
+										<small>I co-wrote a collaborative autoethnography paper, "Care and Liberation in Creating a Student-Led Public Interest Technology Clinic", with the four other founders of PInT. We presented our research at the
+											<a id="link" href="https://attend.ieee.org/istas-2020/">
+												2020 IEEE ISTAS conference</a>, and we are submitting it to be published in an IEEE magazine.
+										</small>
+										<a href="https://drive.google.com/file/d/1iafsRXjC9Vv6gmzRZoT3hPgIrpjh7xoG/view?usp=sharing">Read paper</a>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+								<figure>
+									<div><img src="images/pneumask.jpeg" alt="Picture of the Pneumask, a full-face reusable mask that is adapted from a snorkel, for covid-19 protection."></div>
+									<figcaption>
+										<h1>Pneumask App</h1>
+										<small>I worked with
+											<a id="link" href="https://www.pneumask.org/">Stanford's Prakash Lab</a>
+											to develop and launch an Android app called
+											<a id="link" href="https://play.google.com/store/apps/details?id=org.pneumask.app&hl=en_US&gl=US">Pneumask App</a>, which helps doctors communicate while wearing sound-inhibiting personal protective equipment. The app uses the phone's built-in speakers to amplify a doctor's voice from a Bluetooth microphone inside the mask.</small>
+										<a href="https://play.google.com/store/apps/details?id=org.pneumask.app&hl=en_US&gl=US" target="_blank">App listing</a>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+								<figure>
+									<div><img src="images/info.jpg" alt="Screenshot of info.olin.build website homepage"></div>
+									<figcaption>
+										<h1>info.olin.build</h1>
+										<small>A 4-week project for a class. After conducting user research, beta testing, and iteration, my team created an accessible and aesthetic web page that localizes useful Olin information. Four years later, the site still gets 300+ visits a month,
+											from a total user group of 350 students! See the project
+											<a id="link" href="https://info.olin.build">here</a>.</small>
+										<a href="https://docs.google.com/presentation/d/1C_saFdehgA5xsp2i_hNDtDDzFpYBvz23SclJXKCwx68/edit?usp=sharing" target="_blank">Our Presentation</a>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+								<figure>
+									<div><img src="images/poe.JPG" alt="image of 3d printed battle bots"></div>
+									<figcaption>
+										<h1>Voice-Controlled Laser Battle Bots!</h1>
+										<small>For an 8-week class project, my team of 5 sophomores coded an Android app for speech recognition, and built two robots with drive trains, microcontrollers, Bluetooth, lasers, speakers, and sensors. Click the button to learn about our process!</small>
+										<a href="http://poe.olin.edu/2018/lab_1015/" target="_blank">Website</a>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+								<figure>
+									<div><img src="images/rocky.jpg" alt="image of a pendulum pi-control robot"></div>
+									<figcaption>
+										<h1>Quantitative Engineering Analysis</h1>
+										<!-- <small>Click the button below to learn about some applied math and physics projects! <br><br> Warning: there will be Matlab.</small> -->
+										<small>Click the button below to learn about an applied math and physics project from this double-wide experiential learning class!
+											<a href="https://minhkhang1795.wixsite.com/art-visualizer" target="_blank">Art Visualizer</a>
+										</figcaption>
+									</figure>
+								</li>
+
+								<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+									<figure>
+										<div class="gal_img"><img src="images/pickupbot.jpg" alt="Screenshot of the landing page of the pickup line bot webapp."></div>
+										<figcaption>
+											<h1>Pick-up Line Bot</h1>
+											<small>A friendly bot on Tinder and the web that provides relevant pick-up lines to people, and learns from their feedback. This first-year team project involved web-scraping, elementary machine learning, chat bot creation, and web development. The
+												app is hosted on Heroku, so takes a bit to load.</small>
+											<a href="https://pickuplinebot.herokuapp.com/" target="_blank">Check it out!</a>
+										</figcaption>
+									</figure>
+								</li>
+
+								<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
+									<figure>
+										<div><img src="images/checkplease.jpg" alt="the smiling cast of check please play"></div>
+										<figcaption>
+											<h1>Check, Please</h1>
+											<small>Spring semester of my first year, I co-directed a play! This production was entirely student-led.</small>
+											<!-- <a href="#" target="_blank">Learn More</a> -->
+										</figcaption>
+									</figure>
+								</li>
+
+								<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
+									<figure>
+										<div><img src="images/starwarstheater.jpg" alt="crowded theater of students about to watch star wars"></div>
+										<figcaption>
+											<h1>A New Olin Tradition</h1>
+											<small>During my first semester at Olin, I organized a community bonding event for the whole school: students, faculty, and staff carpooled to a theater together and watched Star Wars: the Last Jedi on the day of the premier! Thanks to school
+												funding, the movie and the pizza party afterwards were free.</small>
+											<!-- <a href="#" target="_blank">Learn More</a> -->
+											<!-- Could write an article or leave as is -->
+										</figcaption>
+									</figure>
+								</li>
+
+								<li class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
+									<figure>
+										<div><img src="images/fish.jpg" alt="goldfish with black background surrounded by a school of digital fish"></div>
+										<figcaption>
+											<h1>Art, Design, and Animation</h1>
+											<small>I've been making art for most of my life, so I like to apply that creativity, aesthetic, and attention to detail to my work as well.</small>
+											<a href="https://drive.google.com/file/d/1XyMLU99MaczUSMSQvYUNsbSz2DvA1ff2/view?usp=sharing" target="_blank">Check it out!</a>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Footer section -->
+
+					<footer>
+						<div class="container">
+
+							<div class="row">
+
+								<div class="col-md-12 col-sm-12">
+									<div id="contact">
+										<h1 class="wow fadeInDown" data-wow-delay="0.2s">Contact Me</h1>
+									</div>
+									<ul class="social-icon">
+										<li>
+											<a href="https://www.linkedin.com/in/emma-pan-85810a15b" class="fa fa-linkedin wow fadeInDown" data-wow-delay="0.2s"></a>
+										</li>
+										<li>
+											<a href="https://github.com/epan547/epan547.github.io" class="fa fa-github wow fadeInDown" data-wow-delay="0.4s"></a>
+										</li>
+										<li>
+											<a href="https://www.facebook.com/emma.pan.585" class="fa fa-facebook wow fadeInDown" data-wow-delay="0.6s"></a>
+										</li>
+										<li>
+											<a href="mailto:epan549@gmail.com" class="fa fa-envelope wow fadeInDown" data-wow-delay="0.8s"></a>
+										</li>
+									</ul>
+
+									<p class="footerbold wow fadeInDown" data-wow-delay="1s">Made with ♡️ by Emma Pan | Gallery Design:
+										<a href="https://templatemo.com" title="free css templates" target="_blank">Templatemo</a>
+										| Animations:
+										<a href="https://animate.style">Animate.css</a>
+										| Timeline Design:
+										<a href="https://freefrontend.com/css-timelines/">Kelsey Santangelo</a>
+									</a>
+								</p>
+								<p class="smalltext wow fadeInDown" data-wow-delay="1s"></p>
+
+							</div>
+
+						</div>
+
+					</div>
+				</footer>
+
+				<!-- Back top -->
+				<a href="#" class="go-top">
+					<i class="fa fa-angle-up"></i>
+				</a>
+
+				<!-- Javascript -->
+				<script src="js/jquery.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/vegas.min.js"></script>
+				<script src="js/modernizr.custom.js"></script>
+				<script src="js/toucheffects.js"></script>
+				<script src="js/owl.carousel.min.js"></script>
+				<script src="js/smoothscroll.js"></script>
+				<script src="js/wow.min.js"></script>
+				<script src="js/custom.js"></script>
+
+			</body>
+
+		</html>
